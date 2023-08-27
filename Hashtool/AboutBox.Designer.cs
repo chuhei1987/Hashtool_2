@@ -38,7 +38,7 @@ namespace Hashtool
             // okButton
             // 
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(153, 89);
+            this.okButton.Location = new System.Drawing.Point(153, 195);
             this.okButton.Margin = new System.Windows.Forms.Padding(4);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(95, 31);
@@ -48,16 +48,16 @@ namespace Hashtool
             // labelSrcCodeURL
             // 
             this.labelSrcCodeURL.AutoSize = true;
-            this.labelSrcCodeURL.Location = new System.Drawing.Point(19, 55);
+            this.labelSrcCodeURL.Location = new System.Drawing.Point(19, 118);
             this.labelSrcCodeURL.Name = "labelSrcCodeURL";
-            this.labelSrcCodeURL.Size = new System.Drawing.Size(69, 19);
+            this.labelSrcCodeURL.Size = new System.Drawing.Size(59, 19);
             this.labelSrcCodeURL.TabIndex = 26;
-            this.labelSrcCodeURL.Text = "Where?";
+            this.labelSrcCodeURL.Text = "DÓNDE";
             // 
             // linkLabelSrcCodeURL
             // 
             this.linkLabelSrcCodeURL.AutoSize = true;
-            this.linkLabelSrcCodeURL.Location = new System.Drawing.Point(104, 55);
+            this.linkLabelSrcCodeURL.Location = new System.Drawing.Point(104, 119);
             this.linkLabelSrcCodeURL.Name = "linkLabelSrcCodeURL";
             this.linkLabelSrcCodeURL.Size = new System.Drawing.Size(79, 19);
             this.linkLabelSrcCodeURL.TabIndex = 27;
@@ -69,7 +69,7 @@ namespace Hashtool
             // 
             this.labelIntro.Location = new System.Drawing.Point(19, 12);
             this.labelIntro.Name = "labelIntro";
-            this.labelIntro.Size = new System.Drawing.Size(484, 43);
+            this.labelIntro.Size = new System.Drawing.Size(484, 89);
             this.labelIntro.TabIndex = 28;
             this.labelIntro.Text = "ProgramIntro";
             // 
@@ -78,7 +78,7 @@ namespace Hashtool
             this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 211);
+            this.ClientSize = new System.Drawing.Size(522, 346);
             this.Controls.Add(this.labelIntro);
             this.Controls.Add(this.linkLabelSrcCodeURL);
             this.Controls.Add(this.labelSrcCodeURL);
@@ -93,7 +93,7 @@ namespace Hashtool
             this.Padding = new System.Windows.Forms.Padding(16, 12, 16, 12);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "About the gadget?";
+            this.Text = "ACERCA";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.AboutBox_Load);
             this.ResumeLayout(false);

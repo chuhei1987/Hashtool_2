@@ -172,9 +172,9 @@ namespace Hashtool
             this.labelSingle.Location = new System.Drawing.Point(1, 1);
             this.labelSingle.Margin = new System.Windows.Forms.Padding(0);
             this.labelSingle.Name = "labelSingle";
-            this.labelSingle.Size = new System.Drawing.Size(66, 24);
+            this.labelSingle.Size = new System.Drawing.Size(98, 24);
             this.labelSingle.TabIndex = 3;
-            this.labelSingle.Text = "NOW";
+            this.labelSingle.Text = "actualmente";
             // 
             // labelTotal
             // 
@@ -184,15 +184,15 @@ namespace Hashtool
             this.labelTotal.Location = new System.Drawing.Point(1, 26);
             this.labelTotal.Margin = new System.Windows.Forms.Padding(0);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(66, 24);
+            this.labelTotal.Size = new System.Drawing.Size(98, 24);
             this.labelTotal.TabIndex = 4;
-            this.labelTotal.Text = "OVERALL";
+            this.labelTotal.Text = "conjunto";
             // 
             // pbSingle
             // 
             this.pbSingle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSingle.Location = new System.Drawing.Point(67, 3);
+            this.pbSingle.Location = new System.Drawing.Point(99, 3);
             this.pbSingle.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.pbSingle.MarqueeAnimationSpeed = 1000;
             this.pbSingle.Maximum = 10000;
@@ -205,7 +205,7 @@ namespace Hashtool
             // 
             this.pbTotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbTotal.Location = new System.Drawing.Point(67, 28);
+            this.pbTotal.Location = new System.Drawing.Point(99, 28);
             this.pbTotal.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.pbTotal.MarqueeAnimationSpeed = 1000;
             this.pbTotal.Maximum = 10000;
@@ -242,7 +242,7 @@ namespace Hashtool
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(101, 38);
             this.btnCopy.TabIndex = 8;
-            this.btnCopy.Text = "COPY";
+            this.btnCopy.Text = "CP";
             this.btnCopy.UseVisualStyleBackColor = true;
             this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
             // 
@@ -258,7 +258,7 @@ namespace Hashtool
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(101, 38);
             this.btnStop.TabIndex = 9;
-            this.btnStop.Text = "STOP";
+            this.btnStop.Text = "TOPE";
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
@@ -274,7 +274,7 @@ namespace Hashtool
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(101, 38);
             this.btnSave.TabIndex = 10;
-            this.btnSave.Text = "SAVE";
+            this.btnSave.Text = "ahorrar";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -315,7 +315,7 @@ namespace Hashtool
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(105, 38);
             this.btnAbout.TabIndex = 11;
-            this.btnAbout.Text = "ABOUT";
+            this.btnAbout.Text = "ACERCA";
             this.btnAbout.UseVisualStyleBackColor = true;
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
@@ -393,7 +393,7 @@ namespace Hashtool
             this.panelStatus.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.panelStatus.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.panelStatus.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.panelStatus.Size = new System.Drawing.Size(627, 52);
+            this.panelStatus.Size = new System.Drawing.Size(659, 52);
             this.panelStatus.TabIndex = 13;
             // 
             // panelSetting
@@ -437,8 +437,8 @@ namespace Hashtool
             this.cbUseMultiThread.Name = "cbUseMultiThread";
             this.cbUseMultiThread.Size = new System.Drawing.Size(101, 28);
             this.cbUseMultiThread.TabIndex = 1;
-            this.cbUseMultiThread.Text = "DO FAST";
-            this.toolTip1.SetToolTip(this.cbUseMultiThread, "What I am for buying such as RYZEN 9 7000 series?!");
+            this.cbUseMultiThread.Text = "RÁPIDO";
+            this.toolTip1.SetToolTip(this.cbUseMultiThread, "acortar el tiempo de cálculo");
             this.cbUseMultiThread.UseVisualStyleBackColor = true;
             // 
             // MainWnd
@@ -459,7 +459,7 @@ namespace Hashtool
             this.MaximizeBox = false;
             this.Name = "MainWnd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hashtool (CHUHEI\'s MOD)";
+            this.Text = "Hashtool (MOD CHUHEI)";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.pnlButton.ResumeLayout(false);

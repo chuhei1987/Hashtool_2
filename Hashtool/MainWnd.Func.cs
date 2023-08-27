@@ -46,7 +46,7 @@ namespace Hashtool
                 this.textResult.AllowDrop = false;
                 this.panelSetting.Enabled = false;
             }
-            SetFilePathTip("無");
+            SetFilePathTip("NULO");
         }
 
         private void SetStopState()
@@ -80,19 +80,19 @@ namespace Hashtool
         {
             if (this.InvokeRequired)
             {
-                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.panelStatus, $"CALCULATING: {filePath}")));
-                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.labelSingle, $"CALCULATING: {filePath}")));
-                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.labelTotal, $"CALCULATING: {filePath}")));
-                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.pbSingle, $"CALCULATING: {filePath}")));
-                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.pbTotal, $"CALCULATING: {filePath}")));
+                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.panelStatus, $"calculadora: {filePath}")));
+                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.labelSingle, $"calculadora: {filePath}")));
+                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.labelTotal, $"calculadora: {filePath}")));
+                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.pbSingle, $"calculadora: {filePath}")));
+                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.pbTotal, $"calculadora: {filePath}")));
             }
             else
             {
-                this.toolTip1.SetToolTip(this.panelStatus, $"CALCULATING: {filePath}");
-                this.toolTip1.SetToolTip(this.labelSingle, $"CALCULATING: {filePath}");
-                this.toolTip1.SetToolTip(this.labelTotal, $"CALCULATING: {filePath}");
-                this.toolTip1.SetToolTip(this.pbSingle, $"CALCULATING: {filePath}");
-                this.toolTip1.SetToolTip(this.pbTotal, $"CALCULATING: {filePath}");
+                this.toolTip1.SetToolTip(this.panelStatus, $"calculadora: {filePath}");
+                this.toolTip1.SetToolTip(this.labelSingle, $"calculadora: {filePath}");
+                this.toolTip1.SetToolTip(this.labelTotal, $"calculadora: {filePath}");
+                this.toolTip1.SetToolTip(this.pbSingle, $"calculadora: {filePath}");
+                this.toolTip1.SetToolTip(this.pbTotal, $"calculadora: {filePath}");
             }
         }
 
@@ -247,8 +247,8 @@ namespace Hashtool
                     var result = new StringBuilder();
 
                     // 添加文件基本信息
-                    result.Append($"FILENAME: {fInfo.Name} ,    ");
-                    result.Append($"SIZE in BYTES: {fInfo.Length} {Environment.NewLine}");
+                    result.Append($"NOMBRE DEL ARCHIVO: {fInfo.Name} ,    ");
+                    result.Append($"Tamaño en BYTE(S): {fInfo.Length} {Environment.NewLine}");
                     //result.Append($"修改时间: {fInfo.LastWriteTime}{Environment.NewLine}");
 
                     if (ct.IsCancellationRequested)

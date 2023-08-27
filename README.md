@@ -1,4 +1,4 @@
-# Hashtool　(CHUHEI's MOD)
+# Hashtool　(CHUHEI's MOD) , In English only at a moment.
 
 
 Using C# to prepare the integrity tools, only keeping currently reliable methods. I am still finding ways to add new in C#
