@@ -46,7 +46,7 @@ namespace Hashtool
                 this.textResult.AllowDrop = false;
                 this.panelSetting.Enabled = false;
             }
-            SetFilePathTip("无");
+            SetFilePathTip("無");
         }
 
         private void SetStopState()
@@ -73,7 +73,7 @@ namespace Hashtool
                 this.textResult.AllowDrop = true;
                 this.panelSetting.Enabled = true;
             }
-            SetFilePathTip("无");
+            SetFilePathTip("無");
         }
 
         private void SetFilePathTip(string filePath)

@@ -89,6 +89,7 @@ namespace Hashtool
             this.cbSHA2_384.Size = new System.Drawing.Size(94, 28);
             this.cbSHA2_384.TabIndex = 2;
             this.cbSHA2_384.Text = "SHA384";
+            this.toolTip1.SetToolTip(this.cbSHA2_384, "美國SHA-384, ISO/IEC 10118-3:2018");
             this.cbSHA2_384.UseVisualStyleBackColor = true;
             // 
             // cbSHA3_384
@@ -102,6 +103,7 @@ namespace Hashtool
             this.cbSHA3_384.Size = new System.Drawing.Size(94, 28);
             this.cbSHA3_384.TabIndex = 5;
             this.cbSHA3_384.Text = "SHA3-384";
+            this.toolTip1.SetToolTip(this.cbSHA3_384, "美國SHA3-384, ISO/IEC 10118-3:2018");
             this.cbSHA3_384.UseVisualStyleBackColor = true;
             // 
             // cbSHA2_256
@@ -436,7 +438,7 @@ namespace Hashtool
             this.cbUseMultiThread.Size = new System.Drawing.Size(94, 28);
             this.cbUseMultiThread.TabIndex = 1;
             this.cbUseMultiThread.Text = "做快點";
-            this.toolTip1.SetToolTip(this.cbUseMultiThread, "快點出到結果不好嗎?");
+            this.toolTip1.SetToolTip(this.cbUseMultiThread, "我買例如超微銳龍7000系列做甚麼?");
             this.cbUseMultiThread.UseVisualStyleBackColor = true;
             // 
             // MainWnd
