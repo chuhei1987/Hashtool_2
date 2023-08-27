@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Test vectors for SHA-1, SHA-2 and SHA-3</title><!-- $CUSTOM$ -->
+<meta name="description" content="Test vectors for SHA-1, SHA-2 and SHA-3"><!-- $CUSTOM$ -->
+
+<!-- $CUSTOM$ -->
+<meta name="keywords" content="Secure Hash Standard, SHA-1, SHA-2, SHA-3, test vectors,
+computer security, cryptography, message digest, hash function, hash algorithm, Federal Information Processing Standards">
+<meta name="copyright" content="Copyright (C) 2012-22 DI Management Services Pty Limited ABN 78 083 210 584 All Rights Reserved">
+<meta name="author" content="David Ireland, DI Management Services Pty Limited, Australia www.di-mgt.com.au">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+<link href="di-print.css" rel="stylesheet" media="print">
+<link href="di-basic.css" rel="stylesheet" media="screen">
+<link href="di-fancy.css" rel="stylesheet" media="Screen and (min-width:768px)">
+<!--[if lt IE 9]><link href="di-fancy.css" rel="stylesheet" media="screen"><![endif]-->
+<!--[if lt IE 9]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <![endif]-->
+
+
+<!-- $CUSTOM$ -->
+<style>
+
+code {
+	font-family: Consolas, 'courier new', courier, monospace;
+	font-size: 80%;
+	background: #efefef;
+	color: black;
+}
+@media (max-width: 768px) {
+	.break300 {
+		display:block;
+		width:300px;
+		word-wrap:break-word;
+	}
+}
+
+</style>
+
+
+</head>
+<body>
+<!-- BEGIN HEADER-BLOCK -->
+<div class="t-header">
+	<div id="search" class="h-search">
+<form method="get" action="https://www.di-mgt.com.au/cgi-bin/ks/ksearch.cgi">
+	<div>
+<input type="text" name="terms" value="" size="8" class="input-box">
+<input type="image" title="Search site" src="images/search16.png" alt="search">
+| <a href="sitemap.html" title="Sitemap for DI Management">Sitemap</a>
+<a href="index.html"><img id="homeicon" style="vertical-align: middle" width="32" height="32" 
+	src="images/home.png" alt="Home" title="Home Page"></a>
+	</div>
+</form>
+	</div>
+	<div id="crumbs" class="h-crumbs">
+<a href="index.html">DI&nbsp;Management Home</a> &gt;
+<!-- $CUSTOM$ -->
+<a href="crypto.html">Cryptography</a> &gt;
+Test vectors for SHA-1, SHA-2 and SHA-3
+	</div>
+</div> 
+<!-- END HEADER-BLOCK -->
+
+<!-- BEGIN BODY-BLOCK -->
+<div class="w-body-text">
+<h1>
+	<img id="logo" class="h-logo" width="151" height="33" src="images/dilogo.gif" 
+	alt="DI Management Services is a computer programming consultancy based in Australia"
+	title="DI Management Services, Australia">
+Test vectors for SHA-1, SHA-2 and SHA-3</h1><!-- $CUSTOM$ -->
+<hr class="noshow">
+
+
+<!-- Body Text begins -->
+
+<p>
+This page summarises useful test vectors for the secure hash algorithms SHA-1, SHA-2 
+and the more recent SHA-3 (approved as a FIPS standard in August 2015 [<a href="#FR-DOC">6</a>]).
+</p>
+
+<div class="qcontents" style="text-align:left;margin-left:2em;">
+<i>Contents:</i>
+<a href="#testvectors">Test Vectors</a> |
+<a href="#references">References</a> |
+<a href="#json">JSON download</a><img src="images/new.gif" width="31" height="12" alt="New"> |
+<a href="#seealso">See Also</a> |
+<a href="#contact">Contact us</a>
+</div>
+
+<p>
+The examples for "abc" and the like for SHA-1 and SHA-2 used to be in the appendix of 
+<a href="#FIPS-180">FIPS-180</a>,
+but then got moved off to a separate 
+<a href="http://csrc.nist.gov/groups/ST/toolkit/documents/Examples/SHA_All.pdf">document</a> on the 
+<a href="http://csrc.nist.gov/groups/ST/toolkit/examples.html">NIST Example Algorithms</a> page.
+</p>
+
+
+<h2><a id="testvectors"></a>Test Vectors</h2>
+
+<div class="overtable">
+<div>
+<b>Input message:</b> <code class="output">"abc"</code>, the bit string <code>(0x)616263</code> of length 24 bits.
+</div>
+<table class="ditable">
+<tr><th>Algorithm</th><th>Output</th></tr>
+<tr><td>SHA-1</td><td><code>a9993e36 4706816a ba3e2571 7850c26c 9cd0d89d</code></td></tr>
+<tr><td>SHA-224</td><td><code>23097d22 3405d822 8642a477 bda255b3 2aadbce4 bda0b3f7 e36c9da7</code></td></tr>
+<tr><td>SHA-256</td><td><code>ba7816bf 8f01cfea 414140de 5dae2223 b00361a3 96177a9c b410ff61 f20015ad</code></td></tr>
+<tr><td>SHA-384</td><td><code>cb00753f45a35e8b b5a03d699ac65007 272c32ab0eded163 1a8b605a43ff5bed 8086072ba1e7cc23 58baeca134c825a7</code></td></tr>
+<tr><td>SHA-512</td><td><code>ddaf35a193617aba cc417349ae204131 12e6fa4e89a97ea2 0a9eeee64b55d39a 2192992a274fc1a8 36ba3c23a3feebbd 454d4423643ce80e 2a9ac94fa54ca49f</code></td></tr>
+
+<tr><td>SHA-3-224</td><td><code>e642824c3f8cf24a d09234ee7d3c766f c9a3a5168d0c94ad 73b46fdf</code></td></tr>
+<tr><td>SHA-3-256</td><td><code>3a985da74fe225b2 045c172d6bd390bd 855f086e3e9d525b 46bfe24511431532</code></td></tr>
+<tr><td>SHA-3-384</td><td><code>ec01498288516fc9 26459f58e2c6ad8d f9b473cb0fc08c25 96da7cf0e49be4b2 98d88cea927ac7f5 39f1edf228376d25</code></td></tr>
+<tr><td>SHA-3-512</td><td><code>b751850b1a57168a 5693cd924b6b096e 08f621827444f70d 884f5d0240d2712e 10e116e9192af3c9 1a7ec57647e39340 57340b4cf408d5a5 6592f8274eec53f0</code></td></tr>
+
+</table></div>
+
+<div>
+<b>Input message:</b> the empty string <code class="output">""</code>, a bit string of length 0.
+</div>
+
+<div class="overtable">
+<table class="ditable">
+<tr><th>Algorithm</th><th>Output</th></tr>
+<tr><td>SHA-1</td><td><code>da39a3ee 5e6b4b0d 3255bfef 95601890 afd80709</code></td></tr>
+<tr><td>SHA-224</td><td><code>d14a028c 2a3a2bc9 476102bb 288234c4 15a2b01f 828ea62a c5b3e42f</code></td></tr>
+<tr><td>SHA-256</td><td><code>e3b0c442 98fc1c14 9afbf4c8 996fb924 27ae41e4 649b934c a495991b 7852b855</code></td></tr>
+<tr><td>SHA-384</td><td><code>38b060a751ac9638 4cd9327eb1b1e36a 21fdb71114be0743 4c0cc7bf63f6e1da 274edebfe76f65fb d51ad2f14898b95b</code></td></tr>
+<tr><td>SHA-512</td><td><code>cf83e1357eefb8bd f1542850d66d8007 d620e4050b5715dc 83f4a921d36ce9ce 47d0d13c5d85f2b0 ff8318d2877eec2f 63b931bd47417a81 a538327af927da3e</code></td></tr>
+
+<tr><td>SHA-3-224</td><td><code>6b4e03423667dbb7 3b6e15454f0eb1ab d4597f9a1b078e3f 5b5a6bc7</code></td></tr>
+<tr><td>SHA-3-256</td><td><code>a7ffc6f8bf1ed766 51c14756a061d662 f580ff4de43b49fa 82d80a4b80f8434a</code></td></tr>
+<tr><td>SHA-3-384</td><td><code>0c63a75b845e4f7d 01107d852e4c2485 c51a50aaaa94fc61 995e71bbee983a2a c3713831264adb47 fb6bd1e058d5f004</code></td></tr>
+<tr><td>SHA-3-512</td><td><code>a69f73cca23a9ac5 c8b567dc185a756e 97c982164fe25859 e0d1dcc1475c80a6 15b2123af1f5f94c 11e3e9402c3ac558 f500199d95b6d3e3 01758586281dcd26</code></td></tr>
+
+</table></div>
+
+<div>
+<b>Input message:</b> <code class="output break300">"abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq"</code> (length 448 bits).
+</div>
+
+<div class="overtable">
+<table class="ditable">
+<tr><th>Algorithm</th><th>Output</th></tr>
+<tr><td>SHA-1</td><td><code>84983e44 1c3bd26e baae4aa1 f95129e5 e54670f1</code></td></tr>
+<tr><td>SHA-224</td><td><code>75388b16 512776cc 5dba5da1 fd890150 b0c6455c b4f58b19 52522525</code></td></tr>
+<tr><td>SHA-256</td><td><code>248d6a61 d20638b8 e5c02693 0c3e6039 a33ce459 64ff2167 f6ecedd4 19db06c1</code></td></tr>
+<tr><td>SHA-384</td><td><code>3391fdddfc8dc739 3707a65b1b470939 7cf8b1d162af05ab fe8f450de5f36bc6 b0455a8520bc4e6f 5fe95b1fe3c8452b</code></td></tr>
+<tr><td>SHA-512</td><td><code>204a8fc6dda82f0a 0ced7beb8e08a416 57c16ef468b228a8 279be331a703c335 96fd15c13b1b07f9 aa1d3bea57789ca0 31ad85c7a71dd703 54ec631238ca3445</code></td></tr>
+
+<tr><td>SHA-3-224</td><td><code>8a24108b154ada21 c9fd5574494479ba 5c7e7ab76ef264ea d0fcce33</code></td></tr>
+<tr><td>SHA-3-256</td><td><code>41c0dba2a9d62408 49100376a8235e2c 82e1b9998a999e21 db32dd97496d3376</code></td></tr>
+<tr><td>SHA-3-384</td><td><code>991c665755eb3a4b 6bbdfb75c78a492e 8c56a22c5c4d7e42 9bfdbc32b9d4ad5a a04a1f076e62fea1 9eef51acd0657c22</code></td></tr>
+<tr><td>SHA-3-512</td><td><code>04a371e84ecfb5b8 b77cb48610fca818 2dd457ce6f326a0f d3d7ec2f1e91636d ee691fbe0c985302 ba1b0d8dc78c0863 46b533b49c030d99 a27daf1139d6e75e</code></td></tr>
+
+</table></div>
+
+<div>
+<b>Input message:</b> 
+<code class="output break300">"abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu"</code> 
+(length 896 bits).
+</div>
+
+<div class="overtable">
+<table class="ditable">
+<tr><th>Algorithm</th><th>Output</th></tr>
+<tr><td>SHA-1</td><td><code>a49b2446 a02c645b f419f995 b6709125 3a04a259</code></td></tr>
+<tr><td>SHA-224</td><td><code>c97ca9a5 59850ce9 7a04a96d ef6d99a9 e0e0e2ab 14e6b8df 265fc0b3</code></td></tr>
+<tr><td>SHA-256</td><td><code>cf5b16a7 78af8380 036ce59e 7b049237 0b249b11 e8f07a51 afac4503 7afee9d1</code></td></tr>
+<tr><td>SHA-384</td><td><code>09330c33f71147e8 3d192fc782cd1b47 53111b173b3b05d2 2fa08086e3b0f712 fcc7c71a557e2db9 66c3e9fa91746039</code></td></tr>
+<tr><td>SHA-512</td><td><code>8e959b75dae313da 8cf4f72814fc143f 8f7779c6eb9f7fa1 7299aeadb6889018 501d289e4900f7e4 331b99dec4b5433a c7d329eeb6dd2654 5e96e55b874be909</code></td></tr>
+
+<tr><td>SHA-3-224</td><td><code>543e6868e1666c1a 643630df77367ae5 a62a85070a51c14c bf665cbc</code></td></tr>
+<tr><td>SHA-3-256</td><td><code>916f6061fe879741 ca6469b43971dfdb 28b1a32dc36cb325 4e812be27aad1d18</code></td></tr>
+<tr><td>SHA-3-384</td><td><code>79407d3b5916b59c 3e30b09822974791 c313fb9ecc849e40 6f23592d04f625dc 8c709b98b43b3852 b337216179aa7fc7</code></td></tr>
+<tr><td>SHA-3-512</td><td><code>afebb2ef542e6579 c50cad06d2e578f9 f8dd6881d7dc824d 26360feebf18a4fa 73e3261122948efc fd492e74e82e2189 ed0fb440d187f382 270cb455f21dd185</code></td></tr>
+
+</table></div>
+
+<div>
+<b>Input message:</b> one million (1,000,000) repetitions of the character <code class="output">"a"</code> (<code>0x61</code>).
+</div>
+
+<div class="overtable">
+<table class="ditable">
+<tr><th>Algorithm</th><th>Output</th></tr>
+<tr><td>SHA-1</td><td><code>34aa973c d4c4daa4 f61eeb2b dbad2731 6534016f</code></td></tr>
+<tr><td>SHA-224</td><td><code>20794655 980c91d8 bbb4c1ea 97618a4b f03f4258 1948b2ee 4ee7ad67</code></td></tr>
+<tr><td>SHA-256</td><td><code>cdc76e5c 9914fb92 81a1c7e2 84d73e67 f1809a48 a497200e 046d39cc c7112cd0</code></td></tr>
+<tr><td>SHA-384</td><td><code>9d0e1809716474cb 086e834e310a4a1c ed149e9c00f24852 7972cec5704c2a5b 07b8b3dc38ecc4eb ae97ddd87f3d8985</code></td></tr>
+<tr><td>SHA-512</td><td><code>e718483d0ce76964 4e2e42c7bc15b463 8e1f98b13b204428 5632a803afa973eb de0ff244877ea60a 4cb0432ce577c31b eb009c5c2c49aa2e 4eadb217ad8cc09b</code></td></tr>
+
+<tr><td>SHA-3-224</td><td><code>d69335b93325192e 516a912e6d19a15c b51c6ed5c15243e7 a7fd653c</code></td></tr>
+<tr><td>SHA-3-256</td><td><code>5c8875ae474a3634 ba4fd55ec85bffd6 61f32aca75c6d699 d0cdcb6c115891c1</code></td></tr>
+<tr><td>SHA-3-384</td><td><code>eee9e24d78c18553 37983451df97c8ad 9eedf256c6334f8e 948d252d5e0e7684 7aa0774ddb90a842 190d2c558b4b8340</code></td></tr>
+<tr><td>SHA-3-512</td><td><code>3c3a876da14034ab 60627c077bb98f7e 120a2a5370212dff b3385a18d4f38859 ed311d0a9d5141ce 9cc5c66ee689b266 a8aa18ace8282a0e 0db596c90b0a7b87</code></td></tr>
+
+</table></div>
+
+<div>
+<b>Input message:</b> the extremely-long message <code class="output break300">"abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmno"</code>
+repeated 16,777,216 times: a bit string of length 2<sup>33</sup> bits (~1 GB).
+This test is from the SHA-3 Candidate Algorithm Submissions document
+[<a href="#SHA3-KAT">5</a>].
+
+The results for SHA-3 are from the Keccak Known Answer Tests
+[<a href="#KECCAK-KAT">4</a>]. The other results are by our own computation.
+
+</div>
+
+<div class="overtable">
+<table class="ditable">
+<tr><th>Algorithm</th><th>Output</th></tr>
+<tr><td>SHA-1</td><td><code>7789f0c9 ef7bfc40 d9331114 3dfbe69e 2017f592</code></td></tr>
+<tr><td>SHA-224</td><td><code>b5989713 ca4fe47a 009f8621 980b34e6 d63ed306 3b2a0a2c 867d8a85</code></td></tr>
+<tr><td>SHA-256</td><td><code>50e72a0e 26442fe2 552dc393 8ac58658 228c0cbf b1d2ca87 2ae43526 6fcd055e</code></td></tr>
+<tr><td>SHA-384</td><td><code>5441235cc0235341 ed806a64fb354742 b5e5c02a3c5cb71b 5f63fb793458d8fd ae599c8cd8884943 c04f11b31b89f023</code></td></tr>
+<tr><td>SHA-512</td><td><code>b47c933421ea2db1 49ad6e10fce6c7f9 3d0752380180ffd7 f4629a712134831d 77be6091b819ed35 2c2967a2e2d4fa50 50723c9630691f1a 05a7281dbe6c1086</code></td></tr>
+
+<tr><td>SHA-3-224</td><td><code>c6d66e77ae289566 afb2ce39277752d6 da2a3c46010f1e0a 0970ff60</code></td></tr>
+<tr><td>SHA-3-256</td><td><code>ecbbc42cbf296603 acb2c6bc0410ef43 78bafb24b710357f 12df607758b33e2b</code></td></tr>
+<tr><td>SHA-3-384</td><td><code>a04296f4fcaae148 71bb5ad33e28dcf6 9238b04204d9941b 8782e816d014bcb7 540e4af54f30d578 f1a1ca2930847a12</code></td></tr>
+<tr><td>SHA-3-512</td><td><code>235ffd53504ef836 a1342b488f483b39 6eabbfe642cf78ee 0d31feec788b23d0 d18d5c339550dd59 58a500d4b95363da 1b5fa18affc1bab2 292dc63b7d85097c</code></td></tr>
+
+</table></div>
+
+<!--
+<div>
+<b>Input message:</b> DUMMY_XXX <code class="output">"x"</code>.
+</div>
+
+<div class="overtable">
+<table class="ditable">
+<tr><th>Algorithm</th><th>Output</th></tr>
+<tr><td>SHA-1</td><td><code>xx</code></td></tr>
+<tr><td>SHA-224</td><td><code>xx</code></td></tr>
+<tr><td>SHA-256</td><td><code>xx</code></td></tr>
+<tr><td>SHA-384</td><td><code>xx</code></td></tr>
+<tr><td>SHA-512</td><td><code>xx</code></td></tr>
+<tr><td>SHA-3-224</td><td><code>xx</code></td></tr>
+<tr><td>SHA-3-256</td><td><code>xx</code></td></tr>
+<tr><td>SHA-3-384</td><td><code>xx</code></td></tr>
+<tr><td>SHA-3-512</td><td><code>xx</code></td></tr>
+</table></div>
+-->
+
+<h2><a id="json"></a>JSON download</h2>
+<p>
+The above data in <a href="sha_testvectors.json">JSON format</a>.
+</p>
+
+
+<h2><a id="references"></a>References</h2>
+
+<ul>
+
+<li><a id="FIPS-180"></a><b>[1]</b>
+National Institute of Standards and Technology.
+<cite>Secure Hash Signature Standard (SHS)</cite>, FIPS PUB 180-4,
+March 2012,
+&lt;<a href="http://csrc.nist.gov/groups/ST/toolkit/secure_hashing.html">http://csrc.nist.gov/groups/ST/toolkit/secure_hashing.html</a>&gt;
+<br>[download: <a href="http://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf">fips-180-4.pdf</a>].
+</li>
+
+
+<li>
+<a id="NIST-EX-SHA"></a><b>[2]</b>
+National Institute of Standards and Technology.
+<cite>Example algorithms - Secure hashing</cite>,
+&lt;<a href="http://csrc.nist.gov/groups/ST/toolkit/examples.html">http://csrc.nist.gov/groups/ST/toolkit/examples.html</a>&gt;
+<br>[download: <a href="http://csrc.nist.gov/groups/ST/toolkit/documents/Examples/SHA_All.pdf">SHA_All.pdf</a>].
+</li>
+
+<li><a id="FIPS-202"></a><b>[3]</b>
+National Institute of Standards and Technology.
+<cite>SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions</cite>, FIPS PUB 202,
+May 2015,
+<br>[download: <a href="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf">NIST.FIPS.202.pdf</a>].
+</li>
+
+<li>
+<a id="KECCAK-KAT"></a><b>[4]</b>
+<cite>Keccak: Known-answer and Monte Carlo test results</cite>, Version 3.0, January 14, 2011,
+<br>[download: <a href="http://keccak.noekeon.org/KeccakKAT-3.zip">KeccakKAT-3.zip</a>].
+</li>
+
+<li>
+<a id="SHA3-KAT"></a><b>[5]</b>
+<cite>Description of Known Answer Test (KAT) and Monte Carlo Test (MCT) for SHA-3 Candidate Algorithm Submissions</cite>, 
+Revision 3: February 20, 2008,
+<br>[download: <a href="http://csrc.nist.gov/groups/ST/hash/documents/SHA3-KATMCT1.pdf">SHA3-KATMCT1.pdf</a>].
+</li>
+
+<li>
+<a id="FR-DOC"></a><b>[6]</b>
+Federal Register, 
+A Notice by the National Institute of Standards and Technology.
+<a href="https://www.federalregister.gov/articles/2015/08/05/2015-19181/announcing-approval-of-federal-information-processing-standard-fips-202-sha-3-standard">Announcing Approval of Federal Information Processing Standard (FIPS) 202, SHA-3 Standard</a>,
+FR Doc. 2015-19181. Publication date 5 August 2015.
+</li>
+
+
+</ul>
+
+<h2><a id="seealso"></a>See Also</h2>
+
+<p>
+Thanks to <a href="http://www.wolfgang-ehrhardt.de/">Wolfgang Ehrhardt</a> for his help in deciphering the obscure NIST test documents, 
+and his persistence in badgering NIST to correct their test vectors.
+These latest SHA-3 test vectors correspond to Wolfgang's  <a href="http://www.wolfgang-ehrhardt.de/crchash_en.html#keccak">Pascal/Delphi  implementation</a>.
+</p>
+
+<h2><a id="contact"></a>Contact</h2>
+<p>
+For more information, or to comment on this page, please <a href="https://www.di-mgt.com.au/contactmsg.php?topic=Cryptography+in+general">send us a message</a>.
+</p>
+
+
+<p><i>This page first published 22 October 2012. Last updated 26 December 2022. </i></p>
+
+
+
+</div> <!-- END BODY-BLOCK -->
+
+<!-- BEGIN FOOTER-BLOCK -->
+<!-- Page footer - Rule, Copyright and Text-style Links - No side menu -->
+<hr class="noshow">
+<div id="footerblock" class="w-footer">
+<!-- Show off WC3 logo -->
+<div id="w3c" class="f-w3c">
+<!-- IMPORTANT: check these $CUSTOM$ links! -->
+<a href="https://validator.w3.org/nu/?doc=https://www.di-mgt.com.au/sha_testvectors.html"><!-- $CUSTOM$ -->
+<img width="64" height="64" alt="HTML5 Powered" src="images/HTML5_Logo_64.png"></a>
+                          <a href="https://www.di-mgt.com.au/sha_testvectors.html"><!-- $CUSTOM$ -->
+<img width="64" height="64" alt="reload" src="images/reload64.png" ></a>
+</div>
+<!-- end of WC3 logo -->
+
+<div class="f-copyright"><!-- $CUSTOM$ -->
+	Copyright &copy; 2012-22 DI Management Services Pty Limited 
+	ABN&nbsp;78&nbsp;083&nbsp;210&nbsp;584
+	Australia.<br>
+
+	<a class="links" href="https://www.di-mgt.com.au">
+<b>www.di-mgt.com.au</b></a>.
+	All rights reserved.
+</div>                                             
+<!-- Text-style links -->
+<p class="footer-links">
+
+	<a class="links" href="index.html" >Home</a> |
+	<a class="links" href="services.html" >Services</a> |
+	<a class="links" href="profile.html" >About Us</a> |
+	<a class="links" href="projects.html" >Projects</a> |
+	<a class="links" href="links.html" >Links</a> |
+	<a class="links" href="crypto.html" >Cryptography</a> |
+	<a class="links" href="https://www.cryptosys.net/" >CryptoSys API</a> |
+	<a class="links" href="https://www.cryptosys.net/pki/" >CryptoSys PKI</a> |
+	<a class="links" href="dbxanalyzer/index.html" >DBXanalyzer</a> |
+	<a class="links" href="bigdigits.html">BigDigits</a> |
+	<a class="links" href="maths.html">Mathematics</a> |
+	<a class="links" href="wclock/index.html">Wclock</a> |
+	<a class="links" href="sudoku.html">Su Doku</a> |
+	<a class="links" href="site.html">About This Site</a> |
+	<a class="links" href="contact.html">Contact</a> |
+	<a class="links" href="https://www.di-mgt.com.au/contactmsg.php">Email Us</a>
+</p>
+</div> <!-- END FOOTER-BLOCK -->
+
+</body></html>

@@ -43,16 +43,16 @@ namespace Hashtool
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(95, 38);
             this.okButton.TabIndex = 24;
-            this.okButton.Text = "确定(&O)";
+            this.okButton.Text = "確定(&O)";
             // 
             // labelSrcCodeURL
             // 
             this.labelSrcCodeURL.AutoSize = true;
             this.labelSrcCodeURL.Location = new System.Drawing.Point(19, 67);
             this.labelSrcCodeURL.Name = "labelSrcCodeURL";
-            this.labelSrcCodeURL.Size = new System.Drawing.Size(79, 23);
+            this.labelSrcCodeURL.Size = new System.Drawing.Size(47, 23);
             this.labelSrcCodeURL.TabIndex = 26;
-            this.labelSrcCodeURL.Text = "源码地址:";
+            this.labelSrcCodeURL.Text = "來源:";
             // 
             // linkLabelSrcCodeURL
             // 
@@ -93,7 +93,7 @@ namespace Hashtool
             this.Padding = new System.Windows.Forms.Padding(16, 15, 16, 15);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "关于";
+            this.Text = "關於檢驗工具";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.AboutBox_Load);
             this.ResumeLayout(false);

@@ -9,8 +9,8 @@ namespace Hashtool
 {
     static class Program
     {
-        public static string SrcCodeURL { get { return "https://github.com/ww-rm/Hashtool"; } }
-        public static string IntroStr { get { return "本程序是一个使用C#语言开发的开源哈希值计算工具，可以对多个文件的常见哈希值进行计算。"; } }
+        public static string SrcCodeURL { get { return "https://github.com/chuhei1987/Hashtool_2"; } }
+        public static string IntroStr { get { return "採用C#打造計算驗證碼工具,支援SHA2,SHA3和SM3"; } }
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>

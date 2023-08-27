@@ -25,14 +25,14 @@ namespace Hashtool
             SetStopState();
 
             // 默认界面设置
-            cbMD5.Checked = true;
-            cbSHA1.Checked = true;
-            //cbSHA2_256.Checked = true;
-            //cbSHA2_512.Checked = true;
+            //cbMD5.Checked = true;
+            //cbSHA1.Checked = true;
+            cbSHA2_256.Checked = true;
+            cbSHA2_512.Checked = true;
             //cbSHA3_256.Checked = true;
             //cbSHA3_512.Checked = true;
-            //cbSM3.Checked = true;
-            cbCRC32.Checked = true;
+            cbSM3.Checked = true;
+            //cbCRC32.Checked = true;
 
             cbUpperCase.Checked = true;
             cbUseMultiThread.Checked = true;
@@ -68,7 +68,7 @@ namespace Hashtool
         {
             var sfd = new SaveFileDialog()
             {
-                Filter = "文本文件(*.txt)|*.txt|所有文件(*.*)|*.*",
+                Filter = "文字檔(*.txt)|*.txt|所有文件(*.*)|*.*",
                 DefaultExt = ".txt",
                 FileName = "HashResult.txt"
             };
@@ -115,5 +115,7 @@ namespace Hashtool
             var aboutBox = new AboutBox();
             aboutBox.ShowDialog();
         }
+
+       
     }
 }

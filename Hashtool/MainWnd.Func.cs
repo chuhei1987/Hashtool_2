@@ -80,57 +80,59 @@ namespace Hashtool
         {
             if (this.InvokeRequired)
             {
-                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.panelStatus, $"正在计算: {filePath}")));
-                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.labelSingle, $"正在计算: {filePath}")));
-                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.labelTotal, $"正在计算: {filePath}")));
-                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.pbSingle, $"正在计算: {filePath}")));
-                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.pbTotal, $"正在计算: {filePath}")));
+                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.panelStatus, $"計算中: {filePath}")));
+                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.labelSingle, $"計算中: {filePath}")));
+                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.labelTotal, $"計算中: {filePath}")));
+                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.pbSingle, $"計算中: {filePath}")));
+                this.BeginInvoke(new Action(() => this.toolTip1.SetToolTip(this.pbTotal, $"計算中: {filePath}")));
             }
             else
             {
-                this.toolTip1.SetToolTip(this.panelStatus, $"正在计算: {filePath}");
-                this.toolTip1.SetToolTip(this.labelSingle, $"正在计算: {filePath}");
-                this.toolTip1.SetToolTip(this.labelTotal, $"正在计算: {filePath}");
-                this.toolTip1.SetToolTip(this.pbSingle, $"正在计算: {filePath}");
-                this.toolTip1.SetToolTip(this.pbTotal, $"正在计算: {filePath}");
+                this.toolTip1.SetToolTip(this.panelStatus, $"計算中: {filePath}");
+                this.toolTip1.SetToolTip(this.labelSingle, $"計算中: {filePath}");
+                this.toolTip1.SetToolTip(this.labelTotal, $"計算中: {filePath}");
+                this.toolTip1.SetToolTip(this.pbSingle, $"計算中: {filePath}");
+                this.toolTip1.SetToolTip(this.pbTotal, $"計算中: {filePath}");
             }
         }
 
         private List<HashAlgType> GetAlgEnabledList()
         {
             var result = new List<HashAlgType>();
-            if (cbMD5.Checked)
+            if (cbSM3.Checked)
             {
-                result.Add(HashAlgType.MD5);
-            }
-            if (cbSHA1.Checked)
-            {
-                result.Add(HashAlgType.SHA1);
+                result.Add(HashAlgType.SM3);
             }
             if (cbSHA2_256.Checked)
             {
                 result.Add(HashAlgType.SHA2_256);
             }
+
+            if (cbSHA2_384.Checked)
+            {
+                result.Add(HashAlgType.SHA2_384); //SHA384
+            }
             if (cbSHA2_512.Checked)
             {
                 result.Add(HashAlgType.SHA2_512);
             }
+            
             if (cbSHA3_256.Checked)
             {
                 result.Add(HashAlgType.SHA3_256);
+            }
+            
+       
+            if (cbSHA3_384.Checked)
+            {
+                result.Add(HashAlgType.SHA3_384); //SHA3-384
             }
             if (cbSHA3_512.Checked)
             {
                 result.Add(HashAlgType.SHA3_512);
             }
-            if (cbSM3.Checked)
-            {
-                result.Add(HashAlgType.SM3);
-            }
-            if (cbCRC32.Checked)
-            {
-                result.Add(HashAlgType.CRC32);
-            }
+            
+ 
             return result;
         }
 
@@ -245,9 +247,9 @@ namespace Hashtool
                     var result = new StringBuilder();
 
                     // 添加文件基本信息
-                    result.Append($"路径: {fInfo.FullName}{Environment.NewLine}");
-                    result.Append($"大小: {fInfo.Length} 字节{Environment.NewLine}");
-                    result.Append($"修改时间: {fInfo.LastWriteTime}{Environment.NewLine}");
+                    result.Append($"檔案名: {fInfo.Name}{Environment.NewLine}");
+                    result.Append($"大小: {fInfo.Length} B{Environment.NewLine}");
+                    //result.Append($"修改时间: {fInfo.LastWriteTime}{Environment.NewLine}");
 
                     if (ct.IsCancellationRequested)
                     {
