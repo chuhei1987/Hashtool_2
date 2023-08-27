@@ -50,9 +50,9 @@ namespace Hashtool
             this.labelSrcCodeURL.AutoSize = true;
             this.labelSrcCodeURL.Location = new System.Drawing.Point(19, 67);
             this.labelSrcCodeURL.Name = "labelSrcCodeURL";
-            this.labelSrcCodeURL.Size = new System.Drawing.Size(47, 23);
+            this.labelSrcCodeURL.Size = new System.Drawing.Size(58, 23);
             this.labelSrcCodeURL.TabIndex = 26;
-            this.labelSrcCodeURL.Text = "來源:";
+            this.labelSrcCodeURL.Text = "どこ？";
             // 
             // linkLabelSrcCodeURL
             // 
@@ -69,7 +69,7 @@ namespace Hashtool
             // 
             this.labelIntro.Location = new System.Drawing.Point(19, 15);
             this.labelIntro.Name = "labelIntro";
-            this.labelIntro.Size = new System.Drawing.Size(364, 52);
+            this.labelIntro.Size = new System.Drawing.Size(693, 52);
             this.labelIntro.TabIndex = 28;
             this.labelIntro.Text = "ProgramIntro";
             // 
@@ -78,7 +78,7 @@ namespace Hashtool
             this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 163);
+            this.ClientSize = new System.Drawing.Size(747, 194);
             this.Controls.Add(this.labelIntro);
             this.Controls.Add(this.linkLabelSrcCodeURL);
             this.Controls.Add(this.labelSrcCodeURL);
@@ -93,7 +93,7 @@ namespace Hashtool
             this.Padding = new System.Windows.Forms.Padding(16, 15, 16, 15);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "關於檢驗工具";
+            this.Text = "について";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.AboutBox_Load);
             this.ResumeLayout(false);

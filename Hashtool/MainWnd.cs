@@ -43,7 +43,7 @@ namespace Hashtool
             var ofd = new OpenFileDialog()
             {
                 Multiselect = true,
-                Filter = "所有文件(*.*)|*.*"
+                Filter = "すべて(*.*)|*.*"
             };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -68,7 +68,7 @@ namespace Hashtool
         {
             var sfd = new SaveFileDialog()
             {
-                Filter = "文字檔(*.txt)|*.txt|所有文件(*.*)|*.*",
+                Filter = "文字(*.txt)|*.txt|すべて(*.*)|*.*",
                 DefaultExt = ".txt",
                 FileName = "HashResult.txt"
             };

@@ -248,7 +248,7 @@ namespace Hashtool
 
                     // 添加文件基本信息
                     result.Append($"檔案名: {fInfo.Name}{Environment.NewLine}");
-                    result.Append($"大小: {fInfo.Length} B{Environment.NewLine}");
+                    result.Append($"サイズ: {fInfo.Length} B{Environment.NewLine}");
                     //result.Append($"修改时间: {fInfo.LastWriteTime}{Environment.NewLine}");
 
                     if (ct.IsCancellationRequested)

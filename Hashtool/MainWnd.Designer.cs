@@ -160,7 +160,7 @@ namespace Hashtool
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(101, 38);
             this.btnOpen.TabIndex = 2;
-            this.btnOpen.Text = "打開(O)";
+            this.btnOpen.Text = "オープン";
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
@@ -172,9 +172,9 @@ namespace Hashtool
             this.labelSingle.Location = new System.Drawing.Point(1, 1);
             this.labelSingle.Margin = new System.Windows.Forms.Padding(0);
             this.labelSingle.Name = "labelSingle";
-            this.labelSingle.Size = new System.Drawing.Size(74, 24);
+            this.labelSingle.Size = new System.Drawing.Size(58, 24);
             this.labelSingle.TabIndex = 3;
-            this.labelSingle.Text = "當前進度";
+            this.labelSingle.Text = "いま";
             // 
             // labelTotal
             // 
@@ -184,7 +184,7 @@ namespace Hashtool
             this.labelTotal.Location = new System.Drawing.Point(1, 26);
             this.labelTotal.Margin = new System.Windows.Forms.Padding(0);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(74, 24);
+            this.labelTotal.Size = new System.Drawing.Size(58, 24);
             this.labelTotal.TabIndex = 4;
             this.labelTotal.Text = "總進度";
             // 
@@ -192,12 +192,12 @@ namespace Hashtool
             // 
             this.pbSingle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSingle.Location = new System.Drawing.Point(75, 3);
+            this.pbSingle.Location = new System.Drawing.Point(59, 3);
             this.pbSingle.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.pbSingle.MarqueeAnimationSpeed = 1000;
             this.pbSingle.Maximum = 10000;
             this.pbSingle.Name = "pbSingle";
-            this.pbSingle.Size = new System.Drawing.Size(551, 21);
+            this.pbSingle.Size = new System.Drawing.Size(567, 21);
             this.pbSingle.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pbSingle.TabIndex = 5;
             // 
@@ -205,12 +205,12 @@ namespace Hashtool
             // 
             this.pbTotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbTotal.Location = new System.Drawing.Point(75, 28);
+            this.pbTotal.Location = new System.Drawing.Point(59, 28);
             this.pbTotal.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.pbTotal.MarqueeAnimationSpeed = 1000;
             this.pbTotal.Maximum = 10000;
             this.pbTotal.Name = "pbTotal";
-            this.pbTotal.Size = new System.Drawing.Size(551, 21);
+            this.pbTotal.Size = new System.Drawing.Size(567, 21);
             this.pbTotal.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pbTotal.TabIndex = 6;
             // 
@@ -226,7 +226,7 @@ namespace Hashtool
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(101, 38);
             this.btnClear.TabIndex = 7;
-            this.btnClear.Text = "清除(L)";
+            this.btnClear.Text = "掃除";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -242,7 +242,7 @@ namespace Hashtool
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(101, 38);
             this.btnCopy.TabIndex = 8;
-            this.btnCopy.Text = "複製(C)";
+            this.btnCopy.Text = "コピー";
             this.btnCopy.UseVisualStyleBackColor = true;
             this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
             // 
@@ -258,7 +258,7 @@ namespace Hashtool
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(101, 38);
             this.btnStop.TabIndex = 9;
-            this.btnStop.Text = "停止(T)";
+            this.btnStop.Text = "停";
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
@@ -274,7 +274,7 @@ namespace Hashtool
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(101, 38);
             this.btnSave.TabIndex = 10;
-            this.btnSave.Text = "儲存(S)";
+            this.btnSave.Text = "儲存";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -315,7 +315,7 @@ namespace Hashtool
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(105, 38);
             this.btnAbout.TabIndex = 11;
-            this.btnAbout.Text = "關於(A)";
+            this.btnAbout.Text = "について";
             this.btnAbout.UseVisualStyleBackColor = true;
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
@@ -410,7 +410,7 @@ namespace Hashtool
             this.panelSetting.RowCount = 2;
             this.panelSetting.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.panelSetting.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.panelSetting.Size = new System.Drawing.Size(96, 58);
+            this.panelSetting.Size = new System.Drawing.Size(103, 58);
             this.panelSetting.TabIndex = 14;
             // 
             // cbUpperCase
@@ -421,9 +421,9 @@ namespace Hashtool
             this.cbUpperCase.Location = new System.Drawing.Point(1, 1);
             this.cbUpperCase.Margin = new System.Windows.Forms.Padding(0);
             this.cbUpperCase.Name = "cbUpperCase";
-            this.cbUpperCase.Size = new System.Drawing.Size(94, 28);
+            this.cbUpperCase.Size = new System.Drawing.Size(101, 28);
             this.cbUpperCase.TabIndex = 0;
-            this.cbUpperCase.Text = "結果大寫";
+            this.cbUpperCase.Text = "hash/HASH";
             this.toolTip1.SetToolTip(this.cbUpperCase, "驗證碼以大階顯示");
             this.cbUpperCase.UseVisualStyleBackColor = true;
             // 
@@ -435,9 +435,9 @@ namespace Hashtool
             this.cbUseMultiThread.Location = new System.Drawing.Point(1, 29);
             this.cbUseMultiThread.Margin = new System.Windows.Forms.Padding(0);
             this.cbUseMultiThread.Name = "cbUseMultiThread";
-            this.cbUseMultiThread.Size = new System.Drawing.Size(94, 28);
+            this.cbUseMultiThread.Size = new System.Drawing.Size(101, 28);
             this.cbUseMultiThread.TabIndex = 1;
-            this.cbUseMultiThread.Text = "做快點";
+            this.cbUseMultiThread.Text = "高速";
             this.toolTip1.SetToolTip(this.cbUseMultiThread, "我買例如超微銳龍7000系列做甚麼?");
             this.cbUseMultiThread.UseVisualStyleBackColor = true;
             // 
