@@ -38,28 +38,28 @@ namespace Hashtool
             // okButton
             // 
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(152, 108);
-            this.okButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.okButton.Location = new System.Drawing.Point(153, 89);
+            this.okButton.Margin = new System.Windows.Forms.Padding(4);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(95, 38);
+            this.okButton.Size = new System.Drawing.Size(95, 31);
             this.okButton.TabIndex = 24;
-            this.okButton.Text = "確定(&O)";
+            this.okButton.Text = "OK";
             // 
             // labelSrcCodeURL
             // 
             this.labelSrcCodeURL.AutoSize = true;
-            this.labelSrcCodeURL.Location = new System.Drawing.Point(19, 67);
+            this.labelSrcCodeURL.Location = new System.Drawing.Point(19, 55);
             this.labelSrcCodeURL.Name = "labelSrcCodeURL";
-            this.labelSrcCodeURL.Size = new System.Drawing.Size(47, 23);
+            this.labelSrcCodeURL.Size = new System.Drawing.Size(69, 19);
             this.labelSrcCodeURL.TabIndex = 26;
-            this.labelSrcCodeURL.Text = "來源:";
+            this.labelSrcCodeURL.Text = "Where?";
             // 
             // linkLabelSrcCodeURL
             // 
             this.linkLabelSrcCodeURL.AutoSize = true;
-            this.linkLabelSrcCodeURL.Location = new System.Drawing.Point(104, 67);
+            this.linkLabelSrcCodeURL.Location = new System.Drawing.Point(104, 55);
             this.linkLabelSrcCodeURL.Name = "linkLabelSrcCodeURL";
-            this.linkLabelSrcCodeURL.Size = new System.Drawing.Size(77, 23);
+            this.linkLabelSrcCodeURL.Size = new System.Drawing.Size(79, 19);
             this.linkLabelSrcCodeURL.TabIndex = 27;
             this.linkLabelSrcCodeURL.TabStop = true;
             this.linkLabelSrcCodeURL.Text = "CodeURL";
@@ -67,33 +67,33 @@ namespace Hashtool
             // 
             // labelIntro
             // 
-            this.labelIntro.Location = new System.Drawing.Point(19, 15);
+            this.labelIntro.Location = new System.Drawing.Point(19, 12);
             this.labelIntro.Name = "labelIntro";
-            this.labelIntro.Size = new System.Drawing.Size(364, 52);
+            this.labelIntro.Size = new System.Drawing.Size(484, 43);
             this.labelIntro.TabIndex = 28;
             this.labelIntro.Text = "ProgramIntro";
             // 
             // AboutBox
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 163);
+            this.ClientSize = new System.Drawing.Size(522, 211);
             this.Controls.Add(this.labelIntro);
             this.Controls.Add(this.linkLabelSrcCodeURL);
             this.Controls.Add(this.labelSrcCodeURL);
             this.Controls.Add(this.okButton);
-            this.Font = new System.Drawing.Font("Comic Sans MS", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Noto Mono", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutBox";
-            this.Padding = new System.Windows.Forms.Padding(16, 15, 16, 15);
+            this.Padding = new System.Windows.Forms.Padding(16, 12, 16, 12);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "關於檢驗工具";
+            this.Text = "About the gadget?";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.AboutBox_Load);
             this.ResumeLayout(false);

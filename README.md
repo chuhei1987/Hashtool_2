@@ -1,12 +1,13 @@
-# 朱熹修改 Hashtool　
+# Hashtool　(CHUHEI's MOD)
 
-採用C#編寫而成的計算驗證碼的小工具，主要踢走過時的驗證方法，其次，重溫一些東西。　亦嘗試找方法加新東西進去。
 
-### 你需要
+Using C# to prepare the integrity tools, only keeping currently reliable methods. I am still finding ways to add new in C#
 
-```.NET Framework 4.8.1``` (當然只限即用,你自己編譯的,建議使用4.6.2或以上)
+### What need
 
-### 支持的算法
+```.NET Framework 4.8.1``` (Only for ready use, If you like assembly by youself, 4.6.2 or higher is recommended)
+
+### Method Supported
 
 - [x] SHA2-256 (SHA256)
 - [x] SHA2-384 (SHA384)
@@ -16,16 +17,17 @@
 - [X] SHA3-512
 - [x] SM3
 
-### 支持的功能
+### Supporting
 
-- [x] 拖動或撳打開對多個文件計算其驗證碼
-- [x] 實時顯示當前文件計算進度暨整個任務計算進度
-- [x] 可以指定文件只使用單線程或多線程進行加速
+- [x] Dealing with many files via dragging or opening.
+- [x] Realtime showing how good the progression is.
+- [x] Can assign if prefer single threaded or multi-threaded
+### Reasons of using that?
+- [x]　Tracable 
+- [x]　Easy, handy
+- [x]　In most of cases, For seller's side, You only are responsible what you decleared with hash(es) decleared.
 
-### 為何你應該要持這些工具？
-- [x]　方便簡單
-- [x]　對發布人而言，推責，因為只要特徵不是你公開宣示的，法律上，一般情況下你不需負責。
-- [x]　對客人而言，有第三方監督（主要是美國ＮＩＳＴ和中華人民共和國國家密碼管理局）會比較穩妥。如果你遇到一些傳統公司，無明言特徵碼，建議用ＷＧＥＴ或ＣＵＲＬ下載需要的檔案吧。因為傳統上仍然看ＭＴＩＭＥ。
 
-###　雜項
-ＩＰＦＳ上的東西不等於長久保存。
+###　miscellaneous
+1. Beings on IPFS doesn't mean last for forever as in fact, there is no things last for forever.
+2. For dealing with traditional entity such as NIST, Github, you are suggested using wget and/or curl if you can't find release hash.

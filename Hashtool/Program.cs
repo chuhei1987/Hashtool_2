@@ -10,7 +10,7 @@ namespace Hashtool
     static class Program
     {
         public static string SrcCodeURL { get { return "https://github.com/chuhei1987/Hashtool_2"; } }
-        public static string IntroStr { get { return "採用C#打造計算驗證碼工具,支援SHA2,SHA3和SM3"; } }
+        public static string IntroStr { get { return "Using C# to construct integrity checking gadget, Supporting SHA-2,SHA-3 and SM3"; } }
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
